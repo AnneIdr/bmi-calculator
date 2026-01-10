@@ -24,11 +24,11 @@ if st.button("Calculate BMI"):
 
     elif 18.5 <= bmi < 25:
         category = "Normal 😁"
-        color = "#4988C4"
+        color = "#5A7863"
     
     elif 25 <= bmi < 30:
         category = "Overweight 😨"
-        color = "#FF4646"
+        color = "#4988C4"
     
     else:
         category = "Obese 😶‍🌫️"
@@ -46,5 +46,6 @@ if st.button("Calculate BMI"):
         unsafe_allow_html=True
 
     )
+
 
 

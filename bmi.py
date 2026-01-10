@@ -15,11 +15,11 @@ st.write(f"🏋🏻 Your Weight : {weight} in kg")
 if st.button("Calculate BMI"):
     h_m = height / 100   # converting cm to meters 
     bmi = weight / (h_m ** 2)
-    st.success(f"YOUR BMI IS **{bmi :.2f}** 💪🏼")
+    st.success(f"YOUR BMI IS **{bmi :.2f}** 👈🏽")
 
     # Print BMI Category
     if bmi < 18.5:
-        category = "Underweight 😶‍🌫️"
+        category = "Underweight 😳"
         color = "#ED9821"
 
     elif 18.5 <= bmi < 25:
@@ -27,11 +27,11 @@ if st.button("Calculate BMI"):
         color = "#1C8022"
     
     elif 25 <= bmi < 30:
-        category = "Overweight 😳"
+        category = "Overweight 😨"
         color = "#0022FF"
     
     else:
-        category = "Obese 😵‍💫"
+        category = "Obese 😶‍🌫️"
         color = "#BA1406"
 
     st.write(category)
@@ -44,4 +44,5 @@ if st.button("Calculate BMI"):
         </div>
         """,
         unsafe_allow_html=True
+
     )
